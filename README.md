@@ -1,6 +1,6 @@
 # `ansx` (ansi syntax)
 
-ANSI Syntax is a markup language for ANSI escape sequences used to render terminal apps.
+ANSI Syntax is an EXPERIMENTAL markup language for ANSI escape sequences. Use it to render terminal apps!
 
 - inspired by HTML (`class`, built-in elements)
 - supports a subset of CSS (style)
