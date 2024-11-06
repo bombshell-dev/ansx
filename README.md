@@ -9,17 +9,32 @@ ANSI Syntax is a markup language for ANSI escape sequences used to render termin
 ## Example
 
 ```js
-import { ansx } from 'ansx'
+import { ansx } from "ansx";
 
-const text = ansx`
-    <div>Hello <span>user</span>!</div>
+function main() {
+    const name = 'user';
+    const output = ansx/* html */`
+        <div>
+            <h1>Greetings <span class="name">${name}</span></h1>
+            <p>🫡  It is your lucky day!</p>
+        </div>
+        <style>
+            h1 {
+                color: green;
+                margin-left: 3;
+            }
+            .name {
+                color: black;
+                background: cyan;
+                padding-inline: 1;
+            }
+            p {
+                color: yellow;
+            }
+        </style>
+    `
+    console.log(output);
+}
 
-    <style>
-        span {
-            color: cyan;
-        }
-    </style>
-`
-
-console.log(text);
+main();
 ```
