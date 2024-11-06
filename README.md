@@ -6,6 +6,10 @@ ANSI Syntax is a markup language for ANSI escape sequences used to render termin
 - supports a subset of CSS (style)
 - Built on top of JavaScript tagged template literals (no build step)
 
+## Development
+
+Run `pnpm start` to run the `./demo.ts` file.
+
 ## Example
 
 ```js
