@@ -23,7 +23,10 @@ function renderElementSync(node: Node): string {
 	if (name === Fragment) return children;
 	const renderers: ((str: string) => string)[] = [];
 	if (attributes.style) {
-		// Handle styles
+		// TODO:
+		// parse complex style values (React Native style)
+		// normalize capitalization
+		// add proper layout algorithm
 		const { background, color, "padding-inline": paddingInline, "margin-left": marginLeft } = attributes.style;
 		if (paddingInline) {
 			const space = ' '.repeat(Number.parseInt(paddingInline, 10));
